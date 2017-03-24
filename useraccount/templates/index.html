@@ -1,0 +1,10 @@
+{% include 'partials/header.html' %}
+<div class="container">
+  <a>welcome user: {{ request.session.username }}</a>
+  &nbsp&nbsp&nbsp
+  <a href="logout" class="btn">logout</a>
+  <a>you can </a><a href="register" class="btn">register</a>&nbsp
+  <span>OR</span>
+  <a href="login" class="btn">Login</a>
+</div>
+{% include 'partials/footer.html' %}

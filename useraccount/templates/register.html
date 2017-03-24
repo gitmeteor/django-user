@@ -1,0 +1,25 @@
+{% include 'partials/header.html' %}
+<div class="container">
+<h3>Register Form</h3>
+<br />
+<form method="post" action='{% url 'register' %}'>
+  {% csrf_token %}
+  <div>
+    <label>username</label>
+    <div>
+      <input type="text" name="username" placeholder="username">
+
+    </div>
+  </div>
+  <div>
+    <label>password</label>
+    <div>
+      <input type="password" name="password" placeholder="password">
+    </div>
+  </div>
+  <div>
+    <button type="submit" class="btn">Register</button>
+  </div>
+</form>
+  </div>
+{% include 'partials/footer.html' %}
